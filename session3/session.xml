@@ -1,0 +1,67 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+
+ <!-- eg:1 -->
+ <!ELEMENT Mobile (Company, Model, Price, Accessories)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Accessories (#PCDATA)>
+<!ATTLIST Model Type CDATA “Camera”>
+<!ENTITY HP “Head Phones”>
+<!ENTITY CH “Charger”>
+<!ENTITY SK “Starters Kit”>
+ <!-- eg:2 -->
+<?xml version=”1.0” encoding=”ISO-8859-1”?>
+<!DOCTYPE Mail [
+<!ELEMENT Mail (To, From, Date, Time, Cc, Bcc, Subject, Message, Signatu re)>
+<!ELEMENT To (#PCDATA)>
+<!ELEMENT From (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Time (#PCDATA)>
+<!ELEMENT Cc (#PCDATA)>
+<!ELEMENT Bcc (#PCDATA)>
+<!ELEMENT Subject (#PCDATA)>
+<!ELEMENT Message (#PCDATA)>
+<!ELEMENT Signature (#PCDATA)>
+]>
+<Mail>
+<To> anne@xyz.com </To>
+<From> bob@xyz.com </From>
+<Date> 27th February 2007 </Date>
+<Time> 11:30 am </Time>
+<Cc> </Cc>
+<Bcc> </Bcc>
+<Subject> Meeting at Main Conference Room at 4:30pm </Subject>
+<Message> Hi, Kindly request you to attend the cultural body general meeting in the main conference room at 4:30 pm. Please be present to learn about the new activities being planned for the employees for this year. Yours sincerely, Bob
+</Message>
+<Signature> </Signature>
+</Mail>
+ <!-- eg:3 -->
+ Default Value
+<!ATTLIST Model Type CDATA “Camera”>
+#IMPLIED
+<!ATTLIST Model Type CDATA “Camera” #IMPLIED>
+#REQUIRED
+<!ATTLIST Model Type CDATA #REQUIRED>
+#FIXED
+<!ATTLIST Model Type CDATA #FIXED “Camera”>
+Enumerated Attribute Values
+<!ATTLIST Model Type (Camera|Bluetooth) “Camera”>
+ <!-- eg:4 -->
+ <!DOCTYPE Mobile [
+<!ELEMENT Mobile (Company, Model, Price, Accessories)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Accessories (#PCDATA)>
+<!ATTLIST Model Type CDATA “Camera”>
+<!ENTITY HP “Head Phones”>
+<!ENTITY CH “Charger”>
+<!ENTITY SK “Starters Kit”>
+]>
+<Mobile>
+<Company> Nokia </Company>
+<Model Type=”Camera”> 6600 </Model>
+<Price> 9999 </Price>
+<Accessories> &HP;, &CH; and a &SK; </Accessories>
+</Mobile>

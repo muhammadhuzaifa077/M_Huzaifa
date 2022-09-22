@@ -1,0 +1,50 @@
+  <!-- eg:1 -->
+  <CD:Title> Feel </CD:Title>
+  <Book:Title> Returning to Earth </Book:Title>.
+ <!-- eg:2 -->
+ <S:Student xmlns:S=” http://www.spectrafocus.com
+/student/”>
+<S:First>John</S:First>
+<S:Last>Dewey</S:Last>
+<S:Title>Student</S:Title>
+</S:Student>
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <!-- eg:3 -->
+ <Auc:Books xmlns:Auc=”http://www.auction.com/books” xmlns:B=”http://www.books.com/HTML/1998/xml1”>
+ <Auc:BookReview>
+<B:Table>
+ <!-- eg:4 -->
+<Catalog xmlns:Book = “http://www.aptechworldwide.com”>
+<Book:Booklist>
+<Book:Title Book:Type = “Fiction”>Evening in Paris</Book:Title>
+<Book:Price>$123</Book:Price>
+</Book:Booklist>
+</Catalog>
+ <!-- eg:5 -->
+<MRow>
+<Mi>x</Mi>
+<Mo>+</Mo>
+<Mn>1</Mn>
+</MRow>
+ <!-- eg:6 -->
+<Catalog xmlns:Book = “http://www.aptechworldwide.com”>
+<Book:Booklist>
+<Book:Title Book:Type = “Fiction”>Evening in
+Paris</Book:Title>
+<Book:Price>$123</Book:Price>
+</Book:Booklist>
+</Catalog>
+<!-- eg:7 -->
+<Catalog xmlns = “http://www.aptechworldwide.com”>
+<Book>
+<Title type = “Fiction”>Evening in Paris</Title>
+<Price>$123</Price>
+</Book>
+<Book>
+<Title type = “Non-Fiction”>Return to Earth</Title>
+<Price xmlns = “http://www.aptech.ac.in”>$23</Price>
+<Title type = “Non-Fiction”>Journey to the center of the Moon</Title>
+<Price>$123</Price>
+</Book>
+</Catalog>
